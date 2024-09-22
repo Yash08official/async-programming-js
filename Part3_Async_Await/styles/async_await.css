@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #C6EA8D,  #FE90AF);
+    background-image: linear-gradient(to bottom, #C6EA8D,  #FE90AF);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Styles for the button */
+  #fetch-data-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #93A5CF, #E4EfE9);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #fetch-data-btn:hover {
+    background: linear-gradient(360deg, #93A5CF, #E4EfE9);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  #fetch-data-btn:active {
+    background: linear-gradient(to bottom, #93A5CF, #E4EfE9);
+    transform: scale(0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add an animation to the button */
+  #fetch-data-btn{
+      animation: pulse 2s infinite;
+  }
+  
+  /*  pulse animation */
+  @keyframes pulse {
+      0% {
+          transform: scale(1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      50% {
+          transform: scale(1.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+      }
+      100% {
+          transform: scale(1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+  }
+  
+  /* Styles for the Div element to display the fetched data  */
+  #data-container {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #ddd;
+      background-image: linear-gradient(#EA8D8D, #A890FE);
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
